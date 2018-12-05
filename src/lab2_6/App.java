@@ -9,6 +9,7 @@ public class App {
         final double newtone = 9.8;
 
         double n;
+        double s;
         byte b;
         Scanner sc = new Scanner(System.in);
         System.out.println("+++ Welcome to MyCalc +++");
@@ -26,7 +27,13 @@ public class App {
                 n = sc.nextDouble();
                 System.out.println(n*inch+" cm");
                 break;
-            case 2    :  break;
+            case 2    :
+                System.out.println("Please enter speed in m/s: ");
+                n = sc.nextDouble();
+                System.out.println("Please time in seconds: ");
+                s = sc.nextDouble();
+                System.out.println(n*s*newtone+" m/s");
+                break;
             case 3    :  break;
 
         }
